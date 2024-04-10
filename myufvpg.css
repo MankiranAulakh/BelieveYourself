@@ -1,0 +1,272 @@
+body {background-color: #F3E4E2;
+  background-repeat: no-repeat;
+  background-size: cover;   
+  /*background-image: url(FloralBg.png); */
+}
+
+
+* {
+ box-sizing: border-box;
+}
+
+/* Navigation section */
+.navbar {
+  background-color: #CBDDDD;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+.navbar ul li {
+  display: inline;
+  margin-bottom: 10px; 
+  font-size: 16pt;
+  padding: 1%;
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 20px;
+  
+  text-decoration: none;
+}
+
+a {
+  color: #3E4141;
+  text-decoration: none; 
+}
+
+.navbar ul li :hover {
+  background-color: #F3E4E2; /* Changed from #C58D9A */
+  /* font-size: 20pt; */
+}
+
+/* Keyframes for continuous animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to second link */
+.animated-link {
+  animation: pulse 2s infinite alternate;
+  color: #9C4F61;
+
+}
+
+.main {
+       margin-left:auto;
+       margin-right:auto;
+       width: 100%;
+         
+       
+justify-content: center;
+align-items: center;
+width: 100%;   
+text-align: center;
+}
+
+.instagram {
+  text-align: center; /* Center align the content */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(156, 79, 97, 0.4);
+  padding: 2.5%;
+  border-radius: 8px;
+  align-items: center;
+}
+.instagram-media-container {
+  margin: 0 auto; /* Add space between heading and Instagram post */
+  text-align: center;
+  align-items: center;
+  padding: 1%;
+  width: 80%;
+}
+
+
+/* Add hover effect to images */
+img {
+  border: 2px solid #3E4141; /* Border color */
+  border-radius: 8px; /* Border radius */
+  margin: 10px; /* Margin around the images */
+  
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Scale up the image on hover 
+img:hover {
+  transform: scale(1.10);  Scale up by 5% on hover 
+}
+*/
+
+.poster-section {
+  text-align: center; /* Center align the content */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(156, 79, 97, 0.4);
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.bookmark-section {
+  text-align: center; /* Center align the content */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(156, 79, 97, 0.4);
+  padding: 2%;
+  border-radius: 8px;
+}
+
+/* Style for the heading */
+h1 {
+  color: black; /* Heading color */
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: black; /* Heading color */
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.project-details {
+  text-align: left; /* Center align the content */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(156, 79, 97, 0.4);
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: black; /* Heading color */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-info {
+  margin-top: 30px;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 1%; 
+  }
+  .navbar ul li {
+    display: block; 
+    margin-bottom: 5px; 
+    font-size: 14pt; 
+  } 
+
+  H4 {
+    font-size: 24px; 
+  }
+
+  H1 {
+    font-size: 3.5vw; 
+  }
+
+  .footer {
+    font-size: 24px;
+  }
+
+  .instagram, .poster-section, .bookmark-section, .project-details {
+    width: 100%;
+  }
+  
+ 
+   
+}
+
+
+
+@media only screen and (max-width:480px) {
+  /* For mobile phones: */
+  .navbar, .main, .footer {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar ul li {
+    font-size: 12pt; 
+  }
+
+  H1 {
+    font-size: 6vw; 
+  }
+
+  .footer {
+    font-size: 20px;
+  }
+
+  .instagram, .poster-section, .bookmark-section, .project-details {
+    width: 99%;
+  }
+  
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
